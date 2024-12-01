@@ -21,9 +21,9 @@ void main()
  }
   printf("Hello ! I am Robot Here :-");
   printf("Please select \n1.Area of circle and Rectangle.\n2.Find Simple Interest.\n3.Gross Salary\n4.To Find Prime NO.\n5.Find Leap Year\n");
-  scanf("%d",&n);
-  cleardevice();
- switch(n)
+  scanf("%d",&n);                
+  cleardevice();                         //to clear page
+ switch(n)                               //conditional Statement
  {
  case 1:
  {
@@ -58,7 +58,7 @@ void main()
  }
  getch();
 }
-void Area()
+void Area()                                                                      // Function definition
 {
  int r,l,b,a2,j;
  float a1;
@@ -79,7 +79,7 @@ void Area()
  printf("Area of Rectangle:- %d",a2);
  }
 }
-void SI()
+void SI()                                                  // Function definition
 {
   float p,t;
   float r,s;
@@ -90,7 +90,7 @@ void SI()
   s=(p*r*t)/100;
   printf("Simple Interest=%f",s);
 }
-void Gross()
+void Gross()                                          // Function definition
 {
  float HRA,DA,BS,TA,GS;
  printf("Enter Basic Salary:-");
@@ -112,7 +112,7 @@ void Gross()
   printf("Gross Salary=%f",GS);
  }
 }
-void Prime()
+void Prime()                                 // Function definition
 {
  int n,i;
  printf("Enter Range of Prime No. ");
@@ -125,7 +125,7 @@ void Prime()
   }
  }
 }
-void Leap()
+void Leap()                        // Function definition
 {
  int n;
  printf("Enter Year:-");

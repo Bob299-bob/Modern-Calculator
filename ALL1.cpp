@@ -1,19 +1,19 @@
-#include<stdio.h>
+#include<stdio.h>                              //Header Files
 #include<conio.h>
 #include<graphics.h>
-void Area();
+void Area();                                //Function Decleration
 void SI();
 void Gross();
 void Prime();
 void Leap();
 void main()
 {
- clrscr();
- int n;
- int gdriver=DETECT,gm;
- initgraph(&gdriver,&gm,"C://TC//BGI");
- rectangle(150,250,450,300);
- circle(150,200,50);
+ clrscr();                              //to clear previous output 
+ int n;                                 
+ int gdriver=DETECT,gm;                                
+ initgraph(&gdriver,&gm,"C://TC//BGI");              // Define path of the program 
+ rectangle(150,250,450,300);                       // rectangle property (int left,int top, int right, int down );
+ circle(150,200,50);                               // circle property(x,y,radius);
  printf("Please select \n1.Area of circle and Rectangle.\n2.Find Simple Interest.\n3.Gross Salary\n4.To Find Prime NO.\n5.Find Leap Year\n");
  scanf("%d",&n);
  switch(n)

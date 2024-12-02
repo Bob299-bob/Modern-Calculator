@@ -95,7 +95,7 @@ void Gross()                                          // Function definition
  float HRA,DA,BS,TA,GS;
  printf("Enter Basic Salary:-");
  scanf("%f",&BS);
- if(BS<1000)
+ if(BS<1000)                                                       // where if basic salary <1000 then HRA=5% of BS , DA=20% of BS & TA =25% of BS 
  {
   HRA=(5*BS)/100;
   DA=(20*BS)/100;
@@ -105,10 +105,10 @@ void Gross()                                          // Function definition
  }
  else
  {
-  HRA=500;
+  HRA=500;                                                      //otherwise HRA=500,DA=30% of BS & TA =30% of BS
   DA=(30*BS)/100;
   TA=(30*BS)/100;
-  GS=HRA+DA+TA+BS;
+  GS=HRA+DA+TA+BS;                       
   printf("Gross Salary=%f",GS);
  }
 }
